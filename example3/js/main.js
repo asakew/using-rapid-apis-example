@@ -14,10 +14,10 @@ fetch("https://weatherapi-com.p.rapidapi.com/history.json?q=London&dt=2022-01-19
       console.log(response);
 
 
-getElement('name').innerHTML = 'Name: ' + location.name;
-getElement('country').innerHTML = 'Country: ' + location.country;
-getElement('region').innerHTML = 'Region: ' + location.region;
-getElement('localtime').innerHTML = 'localtime: ' + location.localtime;
+getElement('name').innerHTML = 'Name: ' + response.name;
+getElement('country').innerHTML = 'Country: ' + response.country;
+getElement('region').innerHTML = 'Region: ' + response.region;
+getElement('localtime').innerHTML = 'localtime: ' + response.localtime;
 
     })
     .catch(err => {
